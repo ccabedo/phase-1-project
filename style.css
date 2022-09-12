@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    color: black;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 50px;
+}
+
+.container {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    width: 200px;
+
+}
+
