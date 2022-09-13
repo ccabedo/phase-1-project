@@ -33,17 +33,18 @@ const renderProducts = (products) => {
     button.innerText = "Add to cart"
 
     button.addEventListener('click', () => {
-        let addToCart = document.querySelector(".sub")
         cartTotal++
         console.log(cartTotal)
         addToCart.textContent = cartTotal
 
-        
     })
 
     itemCard.append(img, p, button)
     div.appendChild(itemCard);
 }
+
 let addToCart = document.querySelector(".sub")
 let cartTotal = 0;
+
+
 
