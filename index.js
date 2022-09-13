@@ -13,19 +13,20 @@ dataList.forEach(products => {
 
 const renderProducts = (products) => {
     let div = document.querySelector('.container')
+    let itemCard = document.createElement('div');
     let img = document.createElement('img')
     img.src = products.image_link
     
     let p = document.createElement('p')
     p.innerText = products.name
+    
 
     p.addEventListener('mouseover', () => {
-        p.style.color = "red";
+        p.style.color = "pink";
     })
 
     p.addEventListener('mouseout', () => {
         p.style.color = "black";
-    
     })
 
     let button = document.createElement('button')
@@ -35,5 +36,6 @@ const renderProducts = (products) => {
         alert("Added to cart!")
     })
 
-    div.append(img, p, button)
+    itemCard.append(img, p, button)
+    div.appendChild(itemCard);
 }
