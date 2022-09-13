@@ -9,21 +9,15 @@ main {
     text-align: center;
     margin-left:auto;
     margin-right:auto;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
-.nav-bar {
-    
-}
 .container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-div{
-    padding: 50px;
-}
 
 p {
     word-wrap: break-word;
@@ -39,4 +33,91 @@ button {
     border-radius: 2px;
     color: white;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+:root {
+--theme-bg-color: black;
+--theme-color: white;
+
+
+}
+* { 
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  
+  background-color:#3761af;
+  background-color: var(--theme-bg-color);
+  
+  color: white;
+  color: var(--theme-color);
+  
+
+}
+
+.company{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 23.25px;
+    font-size: larger;
+}
+
+.item{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  color: var(--theme-color);
+  /* margin: 0; */
+}
+
+.sub{
+    font-size: x-small;
+}
+
+.search{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 23.25px;
+}
+
+/* .item.right {
+  margin: 0 0 0 auto;
+}   */
+
+
+
+/* .material-icons {
+  font-size:1.8rem;
+} */
+
+
+/* .menu-icon{
+  display:none;
+} */
+
+/* 
+@media (max-width: 700px) {
+  .item.search input {
+    display: none;
+  }
+  .menu-icon {
+    display:block;
+  }
+  .detail,.logo .text {
+    display:none;
+
+  }
+
+
+} */
+
 
