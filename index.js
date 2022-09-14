@@ -7,6 +7,7 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
 
 dataList.forEach(products => {
     renderProducts(products)
+    
 })
 })
 })
@@ -21,6 +22,10 @@ const renderProducts = (products) => {
     
     let p = document.createElement('p')
     p.innerText = products.name
+    
+
+    let price = document.createElement('price')
+    price.innerText = `$${products.price}`
     
 
     p.addEventListener('mouseover', () => {
@@ -43,12 +48,27 @@ const renderProducts = (products) => {
 
     })
 
-    itemCard.append(img, p, button)
+    itemCard.append(img, p, price, button)
     div.appendChild(itemCard);
+
+  
 }
 
 let addToCart = document.querySelector(".sub")
 let cartTotal = 0;
+
+// const searchBar = document.getElementById('searchBar')
+
+// let searchBar = document.getElementById('searchBar')
+
+// searchBar.addEventListener('keyup', (e) => {
+//     const searchString = e.target.value;
+//     const filteredProducts = products.filter((products) => {
+//         products.name.includes(searchString) || 
+//         products.product_type.includes(searchString)
+//     })
+//     console.log(filteredProducts)
+// })
 
 
 
