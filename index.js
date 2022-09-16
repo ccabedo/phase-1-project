@@ -26,7 +26,7 @@ const renderProducts = (products) => {
 
     let button = document.createElement('button')
     button.classList = 'add-cart'
-    button.innerText = "Add to cart"
+    button.innerText = "add to cart"
 
   
     button.addEventListener('click', () => {
@@ -69,7 +69,6 @@ let cartTotal = 0;
 
 
 const searchBar = document.querySelector('#searchBar')
-const movieList = document.querySelector('.genreButton')
 const dataList = document.querySelector('.container')
 
 searchBar.addEventListener('input', (e) => {
